@@ -1,6 +1,8 @@
 #!/bin/bash
 
-# Build all example sketches for DisplayValueCommon using Arduino CLI
-arduino-cli compile --fqbn arduino:avr:uno examples/BasicUsage/BasicUsage.ino
+# Build the DisplayValueCommon library using Arduino CLI
+# Skip examples as it's an abstract library
 
-echo "DisplayValueCommon examples compiled successfully."
+arduino-cli compile --libraries . --fqbn arduino:avr:uno
+
+echo "DisplayValueCommon library compiled successfully."
