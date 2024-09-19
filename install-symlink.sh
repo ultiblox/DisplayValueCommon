@@ -1,11 +1,11 @@
 #!/bin/bash
 
-# Define the source path for the AnalogSensor library using a relative path
+# Define the source path for the DisplayValueCommon library
 LIBRARY_PATH="$PWD"
 
 # Define the target path where the symlink will be created
-# This should be in a 'libraries' directory if adhering to Arduino project structure
-TARGET_PATH="/home/$USER/Arduino/libraries/DisplayInterface"
+# This should be in the Arduino 'libraries' directory
+TARGET_PATH="/home/$USER/Arduino/libraries/DisplayValueCommon"
 
 # Ensure the target directory exists
 mkdir -p $(dirname "${TARGET_PATH}")
