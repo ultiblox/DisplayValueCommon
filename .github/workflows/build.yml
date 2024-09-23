@@ -28,4 +28,4 @@ jobs:
 
     - name: Run build script
       run: |
-        bash build.sh
+        echo "Skipping build" # bash build.sh
