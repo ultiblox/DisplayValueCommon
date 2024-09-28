@@ -10,7 +10,7 @@ DisplayValueLCD display(0x27, 16, 2);
 void setup() {
   Serial.begin(115200);
   sensor.setInterval(1000);
-  sensor.setCallback(handleSensorData);
+  sensor.onDataReceived(handleDataReceived);
   display.init();
   display.setLabel("Sensor Value");
 }
@@ -19,7 +19,7 @@ void loop() {
   sensor.loop();
 }
 
-void handleSensorData(int value) {
+void handleDataReceived(int value) {
   display.updateValue(String(value) + "%");
   Serial.println("Sensor Value: " + String(value));
 }
