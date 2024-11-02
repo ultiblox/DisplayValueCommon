@@ -25,6 +25,6 @@ The `DisplayValueCommon` is a generic interface that defines the basic structure
 
 This is an abstract interface and cannot be used directly. It should be implemented by specific display classes like `DisplayValueLCD`, `DisplayValueOLED`, etc.
 
-## License
 
-This library is open source, distributed under the MIT License.
+## License
+[This project is licensed under the UltiBlox License.](https://ultiblox.org/license)
